@@ -21,6 +21,9 @@ try {
 
    //file uploaded successfully
    console.log("FILE IS UPLOADED ON CLOUDINARY");
+   //log response of cloudinary
+   console.log( "CLOUDINARY RESPONSE -------------->> ", response);
+   fs.unlinkSync(localFilePath)
    return response
 
 } catch (error) {
